@@ -8,8 +8,9 @@ const BotaoCompletar = ()=>{
 
 const concluirTarefa = (evento)=>{
    const botao = evento.target;
-   const lista = botao.parentElement;
-   lista.classList.toggle("done");
+   const div = botao.parentElement;
+   const tarefa = div.parentElement;
+   tarefa.classList.toggle("done");
 }
 
 export default BotaoCompletar;

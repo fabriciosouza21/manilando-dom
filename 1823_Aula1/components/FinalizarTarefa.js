@@ -9,8 +9,9 @@ const BotaoFinalizar = ()=>{
 
 const finalizarTarefa = (evento)=>{
     const botao = evento.target;
-    const lista = botao.parentElement;
-    lista.remove();
+    const div = botao.parentElement;
+    const tarefa = div.parentElement;
+    tarefa.remove();
 }
 
 export default BotaoFinalizar;
